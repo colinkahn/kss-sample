@@ -1,0 +1,37 @@
+{
+  "name": "kss-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "watch": {
+    "build:styleguide": {
+      "patterns": [
+        "src/*.scss"
+      ],
+      "extensions": "scss"
+    }
+  },
+  "scripts": {
+    "start": "npm-run-all -p server watch",
+    "watch": "npm-watch",
+    "server": "static-server styleguide",
+    "release": "release-it",
+    "commitmsg": "conventional-changelog-lint -e",
+    "build:styleguide": "npm-run-all styleguide:*",
+    "styleguide:css": "node-sass src/styleguide.scss styleguide/styleguide.css",
+    "styleguide:kss": "kss --source src --homepage ../README.md --css styleguide.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kss": "^3.0.0-beta.18",
+    "node-sass": "^4.7.2"
+  },
+  "devDependencies": {
+    "conventional-changelog-lint": "^1.1.0",
+    "husky": "^0.14.3",
+    "npm-run-all": "^4.1.2",
+    "npm-watch": "^0.3.0",
+    "release-it": "^7.2.1"
+  }
+}

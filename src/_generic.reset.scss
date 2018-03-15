@@ -1,0 +1,101 @@
+///*----------------------------------*\
+//  #RESET
+//\*----------------------------------*/
+
+// Reset
+//
+// Styleguide Generic.Reset
+
+[class*=c-],
+[class*=v-],
+[class*=o-] {
+  animation: initial;
+  backface-visibility: initial;
+  background: initial;
+  border: initial;
+  border-collapse: initial;
+  border-image: initial;
+  border-radius: initial;
+  border-spacing: initial;
+  bottom: initial;
+  box-shadow: initial;
+  box-sizing: initial;
+  caption-side: initial;
+  clear: initial;
+  clip: initial;
+  column-count: initial;
+  column-fill: initial;
+  column-gap: initial;
+  column-rule: initial;
+  column-span: initial;
+  column-width: initial;
+  columns: initial;
+  content: initial;
+  counter-increment: initial;
+  counter-reset: initial;
+  direction: initial;
+  empty-cells: initial;
+  flex-shrink: 0;
+  float: initial;
+  font-family: initial;
+  font-size: initial;
+  font-stretch: initial;
+  font-style: initial;
+  font-variant: initial;
+  font-weight: initial;
+  height: initial;
+  hyphens: initial;
+  left: initial;
+  letter-spacing: initial;
+  line-height: initial;
+  list-style: none;
+  margin: initial;
+  max-height: initial;
+  max-width: initial;
+  min-height: initial;
+  min-width: initial;
+  opacity: initial;
+  orphans: initial;
+  outline: medium none currentColor;
+  overflow: initial;
+  overflow-x: initial;
+  overflow-y: initial;
+  padding: initial;
+  page-break-after: initial;
+  page-break-before: initial;
+  page-break-inside: initial;
+  perspective: initial;
+  perspective-origin: initial;
+  position: initial;
+  resize: initial;
+  right: initial;
+  tab-size: initial;
+  table-layout: initial;
+  text-align: initial;
+  text-align-last: initial;
+  text-decoration: initial;
+  text-indent: initial;
+  text-shadow: initial;
+  text-transform: initial;
+  top: initial;
+  transform: initial;
+  transform-origin: initial;
+  transform-style: initial;
+  transition: initial;
+  unicode-bidi: initial;
+  vertical-align: initial;
+  visibility: initial;
+  white-space: initial;
+  widows: initial;
+  width: initial;
+  word-break: initial;
+  word-spacing: initial;
+  word-wrap: initial;
+  z-index: initial;
+
+  &,
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}

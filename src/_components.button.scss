@@ -1,0 +1,55 @@
+///*----------------------------------*\
+//  #BUTTON
+//\*----------------------------------*/
+
+// Button
+//
+// .c-button--primary - primary
+// .c-button--primary.is-disabled - primary disabled
+// .c-button--secondary - secondary
+// .c-button--secondary.is-disabled - secondary disabled
+//
+// markup:
+//  <button class="c-button {{modifier_class}}">
+//    <span class="c-button__text">Click Me</span>
+//  </button>
+//
+// Styleguide Components.Button
+
+.c-button {
+  padding: $spacing-2 $spacing-3;
+  border-radius: $border-radius;
+  background-color: currentColor;
+  border: $border-width solid currentColor;
+  color: $neutral-color;
+  cursor: pointer;
+
+  &:disabled,
+  &.is-disabled {
+    color: $disabled-color;
+    cursor: not-allowed;
+  }
+}
+
+.c-button__text {
+  font-family: $font-family;
+  color: $reversed-color;
+}
+
+.c-button--primary,
+.c-button--secondary {
+  color: $primary-color;
+
+  &:hover,
+  &.is-hovered {
+    color: darken($primary-color, 5);
+  }
+}
+
+.c-button--secondary {
+  background-color: transparent;
+
+  .c-button__text {
+    color: currentColor;
+  }
+}
