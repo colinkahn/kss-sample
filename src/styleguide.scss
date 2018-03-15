@@ -2,12 +2,7 @@
 //  #SETTINGS
 //\*----------------------------------*/
 
-@import "settings.colors";
-@import "settings.spacing";
-@import "settings.border";
-@import "settings.typography";
-@import "settings.forms";
-
+@import 'settings.all';
 
 
 
@@ -24,7 +19,7 @@
 //  #GENERIC
 //\*----------------------------------*/
 
-@import "generic.reset";
+@import "generic.all";
 
 
 
@@ -34,9 +29,7 @@
 //  #COMPONENTS
 //\*----------------------------------*/
 
-@import "components.button";
-@import "components.button-2";
-@import "components.panel";
+@import "components.all";
 
 
 
