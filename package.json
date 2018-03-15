@@ -22,7 +22,8 @@
     "release": "release-it",
     "commitmsg": "conventional-changelog-lint -e",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1 -a",
-    "build:styleguide": "npm-run-all styleguide:*",
+    "build:styleguide": "npm-run-all styleguide:* analyze:styleguide",
+    "analyze:styleguide": "parker styleguide/styleguide.css",
     "styleguide:css": "node-sass src/styleguide.scss styleguide/styleguide.css",
     "styleguide:kss": "kss --source src --homepage ../README.md --css styleguide.css"
   },
@@ -38,6 +39,7 @@
     "husky": "^0.14.3",
     "npm-run-all": "^4.1.2",
     "npm-watch": "^0.3.0",
+    "parker": "0.0.10",
     "release-it": "^7.2.1"
   }
 }
