@@ -1,0 +1,59 @@
+///*----------------------------------*\
+//  #BUTTON 2
+//\*----------------------------------*/
+
+// Button 2
+//
+// Button using functional css.
+//
+// .c-button-2--primary - primary
+// .c-button-2--primary.is-disabled - primary disabled
+// .c-button-2--secondary - secondary
+// .c-button-2--secondary.is-disabled - secondary disabled
+// .c-button-2--small - small
+//
+// markup:
+//  <button class="c-button-2 px3 pointer border rounded {{modifier_class}}">
+//    <span class="c-button-2__text ff fs-regular">Click Me</span>
+//  </button>
+//
+// Styleguide Components.Button_2
+
+.c-button-2 {
+  background-color: currentColor;
+  border-color: currentColor;
+  color: $neutral-color;
+  height: $form-field-height;
+
+  &:disabled,
+  &.is-disabled {
+    color: $disabled-color;
+    cursor: not-allowed;
+  }
+}
+
+.c-button-2__text {
+  color: $reversed-color;
+}
+
+.c-button-2--primary,
+.c-button-2--secondary {
+  color: $primary-color;
+
+  &:hover,
+  &.is-hovered {
+    color: darken($primary-color, 5);
+  }
+}
+
+.c-button-2--secondary {
+  background-color: transparent;
+
+  .c-button-2__text {
+    color: currentColor;
+  }
+}
+
+.c-button-2--small {
+  height: $small-form-field-height;
+}
