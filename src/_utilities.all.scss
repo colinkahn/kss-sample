@@ -1,0 +1,58 @@
+///*----------------------------------*\
+//  #SPACING
+//\*----------------------------------*/
+
+.px3 {
+  padding-left: $spacing-3;
+  padding-right: $spacing-3;
+}
+
+.p3 {
+  padding: $spacing-3;
+}
+
+.fs-regular {
+  font-size: $regular-font-size;
+}
+
+.fs-title {
+  font-size: $title-font-size;
+}
+
+.ff {
+  font-family: $font-family;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.rounded {
+  border-radius: $border-radius;
+}
+
+.border {
+  border-style: solid;
+  border-width: $border-width;
+}
+
+.border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: $border-width;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.medium {
+  font-weight: $medium-font-weight;
+}
