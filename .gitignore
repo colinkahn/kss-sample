@@ -1,2 +1,5 @@
 styleguide
 node_modules
+dist
+.stage
+.tmp-*

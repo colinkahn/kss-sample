@@ -1,0 +1,17 @@
+{
+  "buildCommand": "npm run build:dist",
+  "increment": false,
+  "requireCleanWorkingDir": false,
+  "verbose": true,
+  "src": {
+    "commitMessage": "docs(changelog): add changelog for %s",
+    "tagAnnotation": "docs(changelog): add changelog for %s",
+    "tagName": "%s"
+  },
+  "dist": {
+    "commitMessage": "docs(changelog): add changelog for %s",
+    "tagAnnotation": "docs(changelog): add changelog for %s",
+    "tagName": "%s",
+    "repo": "git@github.com:colinkahn/kss-sample-build.git#master"
+  }
+}
