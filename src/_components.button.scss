@@ -33,6 +33,11 @@
   }
 }
 
+.c-button:not(button) {
+  display: inline-flex;
+  align-items: center;
+}
+
 .c-button__text {
   font-family: $font-family;
   font-size: $regular-font-size;
